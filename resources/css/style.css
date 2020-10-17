@@ -1,0 +1,170 @@
+
+/*---------------------------------------------*/
+/* Basic set up */
+/*---------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+  }
+
+  .clearfix{zoom: 1}
+  .clearfix:after{
+      content:'.';
+      clear:both;
+      display: block;
+      height: 0;
+      visibility:hidden;
+    
+  }
+
+/*---------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*---------------------------------------------*/
+
+section {
+  padding: 80px 0px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+/* HEADINGS------------------------------------*/
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), #000), url(../img/dogue-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /*1 100vh is 100% of the viewport */
+  background-attachment: fixed;
+}
+
+.hero-text-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11%;
+  font-size: 300%;
+}
+
+.hero-text-box h1 {
+  font-weight: 200;
+}
+
+h1,
+h2,
+h3{
+    font-weight: 300;
+    text-transform: uppercase;  
+}
+
+h2{
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* BUTTONS------------------------------------*/
+.main-nav{
+  float: right;
+  list-style: none;
+  margin-top: 45px;
+  padding-right: 30px;
+}
+
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+  
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+  
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+  border-bottom: 2px solid #e67e22;
+  
+}
+
+/* ---------------------------------- */
+/*              DogCollage            */
+/* ---------------------------------- */
+
+.section-pictureCollage{
+  padding: 0;
+  
+}
+
+.dogSshowcase{
+  list-style:none;
+  width: 100%;
+
+}
+
+.dogShowcase li {
+  display: block;
+  float: left;
+  width: 25%;
+  
+}
+
+.dogCollage{
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+
+.dogCollage img {
+  opacity: 0.7;
+  width: 100%;
+  height:auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity .5s;
+  
+}
+
+.dogCollage img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+  
+}
+.information2{
+  padding-top: 0;
+  margin: 0 auto;
+}
